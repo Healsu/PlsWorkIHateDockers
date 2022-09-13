@@ -20,6 +20,7 @@ public class PeopleController {
         this.peopleRepository = peopleRepository;
 
     }
+    //test people
     @GetMapping("/")
     public ResponseEntity<People> people() {
         People people = new People("Johny");
