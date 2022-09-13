@@ -27,8 +27,9 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+           name: java-app
+           path: '${{ github.workspace }}/target/*.jar'
+           retention-days: 1
 
   deploy:
     runs-on: windows-latest
